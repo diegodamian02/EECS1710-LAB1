@@ -6,12 +6,12 @@ float velX = 0;
 float velY = 0;
 float moveSpeed;
 float run = 0.05;
-boolean isUp, isDOwn, isLeft, isRight, isFast, isTurn;
+boolean isUp, isDown, isLeft, isRight, isFast, isTurn;
 
 //2d z values
 float[][] terrain;
 //hair objects
-Hair[][] hairArray;
+Tree[][] treeArray;
 
 void setup() {
   size(960, 720, P3D);
@@ -21,7 +21,7 @@ void setup() {
   
   //creat empty float vars
   terrain = new float[cols][rows];
-  hairArray = new Hair[cols][rows];
+  treeArray = new Tree[cols][rows];
 }
 void draw() {
   background (242, 239, 189);
@@ -42,5 +42,5 @@ void draw() {
   if (isDown)velY += moveSpeed;
   if (isLeft)velX -= moveSpeed;
   if (isright)velX += moveSpeed;
-   
+  
    //
