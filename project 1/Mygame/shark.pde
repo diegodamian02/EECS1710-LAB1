@@ -16,7 +16,7 @@ class shark{
   void draw() {
     imageMode(CENTER);
     image(shark,mouseX,mouseY);
-    shark.resize(20,20);
+    shark.resize(350,350);
   }
   
   //out of bounds
